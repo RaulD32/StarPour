@@ -27,17 +27,17 @@ export default function Config() {
       <View style={styles.contenedor} >
         <Text style={styles.texto}>Cuándo</Text>
         <View style={styles.contenido}>
-          <TouchableOpacity style={styles.boton}>
+          <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')}>
             <Text style={styles.textoboton}>Amanecer</Text>
           </TouchableOpacity>
           <Separator />
-          <TouchableOpacity style={styles.boton}>
+          <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')}>
             <Text style={styles.textoboton}>
               Atardecer
             </Text>
           </TouchableOpacity>
           <Separator />
-          <TouchableOpacity style={styles.boton} onPress={() => setOpen(true)}>
+          <TouchableOpacity style={styles.boton} onPress={() => setOpen(true) } >
             <Text style={styles.textoboton}>
               Hora del día
             </Text>
@@ -46,31 +46,31 @@ export default function Config() {
         <View style={styles.contenedor2}>
           <Text>Repetir</Text>
           <View style={styles.contenido}>
-            <TouchableOpacity style={styles.boton}>
+            <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')}>
               <Text style={styles.textoboton}>Diariamente</Text>
             </TouchableOpacity>
             <Separator />
-            <TouchableOpacity style={styles.boton}>
+            <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')}>
               <Text style={styles.textoboton}>
                 Semanalmente
               </Text>
             </TouchableOpacity>
             <Separator />
-            <TouchableOpacity style={styles.boton} >
+            <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')} >
               <Text style={styles.textoboton}>
                 Mensualmente
               </Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.contenedor3}>
+          <View style={styles.contenedor3} >
             <View style={styles.contenido2}>
-              <TouchableOpacity style={styles.boton} >
+              <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')}>
                 <Text style={styles.textoboton}>
                   Ejecutar después de confirmar
                 </Text>
               </TouchableOpacity>
               <Separator></Separator>
-              <TouchableOpacity style={styles.boton} >
+              <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate('alarma')}>
                 <Text style={styles.textoboton}>
                   Ejecutar de inmediato
                 </Text>
